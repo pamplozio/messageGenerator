@@ -1,8 +1,8 @@
 body {
-    background-image: url(./Pictures/sunrisePic.jpg);
+    background-image: url(./Pictures/Silence.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 1200px 800px;
+    background-size: 75rem 50rem;
     background-position: center;
     font-family: Square Peg;
     background-color: black;
@@ -16,10 +16,10 @@ header {
 h1 {
     color: burlywood;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     background-color: black;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
     
 }
 
@@ -27,11 +27,11 @@ h1 {
     color:black;
     text-align: center;
     background-color: burlywood;
-    margin-bottom: 1000px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 183px;
-    margin-left: 183.5px;
+    margin-bottom: 62.5rem;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    margin-right: 11.4375rem;
+    margin-left: 11.4375rem;
 }
 
 .center {
@@ -44,7 +44,7 @@ h1 {
 }
 
 #newMoodB {
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     background-color: transparent;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -55,5 +55,47 @@ h1 {
 }
 
 #newMoodB:active {
-    transform: translateY(4px);
+    transform: translateY(0.25rem);
+    
 }
+
+#moodDisplay {
+    color:black;
+    font-weight: bold;
+    font-size: 64px;
+    margin-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/*.fade-in {
+    animation: fadeIn 2s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+*/
