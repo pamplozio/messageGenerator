@@ -1,5 +1,5 @@
 body {
-    background-image: url(./Pictures/Silence.jpeg);
+    background-image: url(./Pictures/Silence2.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 75rem 50rem;
@@ -30,8 +30,7 @@ h1 {
     margin-bottom: 62.5rem;
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
-    margin-right: 11.4375rem;
-    margin-left: 11.4375rem;
+    margin: auto;
 }
 
 .center {
@@ -44,6 +43,7 @@ h1 {
 }
 
 #newMoodB {
+    font-weight: bold;
     padding: 0.625rem 0.625rem;
     background-color: transparent;
     cursor: pointer;
@@ -81,6 +81,36 @@ h1 {
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 1560px) {
+#moodDisplay {
+    font-size: 55px;
+}
+}
+
+@media only screen and (max-width: 855px) {
+    #moodDisplay {
+        font-size: 45px;
+    }
+    }
+
+@media only screen and (max-width: 565px) {
+    #moodDisplay {
+        font-size: 35px;
+    }
+    }
+
+@media only screen and (max-width: 400px) {
+    #moodDisplay {
+        font-size: 30px;
+    }
+    }
+
+@media only screen and (max-width: 320px) {
+    .secondBanner {
+        margin-bottom: 65.5rem;
+    }
+    }
 
 
 
