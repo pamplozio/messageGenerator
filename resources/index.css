@@ -10,7 +10,9 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 h1 {
@@ -69,7 +71,7 @@ h1 {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: fadeIn 4s;
+    animation: fadeIn 7s;
 }
 
 @keyframes fadeIn {
@@ -105,13 +107,16 @@ h1 {
         font-size: 30px;
     }
     }
-
-@media only screen and (max-width: 320px) {
-    .secondBanner {
-        margin-bottom: 65.5rem;
+/*
+@media only screen and (max-width: 1010px), screen and (max-height: 570px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        overflow-wrap: break-word;
+    } 
+    
     }
-    }
-
+*/
 
 
 /*.fade-in {

@@ -11,7 +11,11 @@ const moods = [
 "Go viral, not bacterical. A flattered client is a repeat client. Your personality can be as colourful as your canvas"];
 
 function newMood() {
+    document.getElementById('moodDisplay').style.display = 'none';
     let randomNumber = Math.floor(Math.random() * (moods.length));
     document.getElementById('moodDisplay').innerHTML = moods[randomNumber];
+    
+    document.getElementById('moodDisplay').style.display = 'block';
+
 }
 
