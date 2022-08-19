@@ -10,25 +10,21 @@ const moods = [
     "Breathing is secondary - don't forget to think. A good manifesto is, foremost, legible. Reconsider your concept of small vs. big.",
     "Go viral, not bacterical. A flattered client is a repeat client. Your personality can be as colourful as your canvas"];
     
-    let button = document.getElementById('newMoodB');
-    let mood = document.getElementById('moodDisplay');
     
     
     function newMood() {
         //document.getElementById('moodDisplay').style.display = 'none';
-        let randomNumber = Math.floor(Math.random() * moods.length);
-        return moods[randomNumber];
+        let randomNumber = Math.floor(Math.random() * (moods.length));
+        document.getElementById('moodDisplay').innerHTML = moods[randomNumber];
+        
+        //document.getElementById('moodDisplay').style.display = 'block';
+        let button = document.getElementById('newMoodB');
+        //change button letters
+        button.innerHTML = 'See you tomorrow ;)';
+    
+        //stop the function by putting a remove handler:
+        button.removeElementListener('click', newMood);
+    
     }
     
-    function showMood() {
-        moodDisplay.innerHTML = newMood();
-        button.innerHTML = "See you tomorrow ;)";
-        button.style.cursor = 'default';
-        
-        //stop the moods visualization
-        button.removeEventListener('click', showMood);
-
-        
-    }
-    
-    button.addEventListener('click', showMood);
+    button.addEventListener('click', newMood);

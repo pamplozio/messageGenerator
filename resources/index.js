@@ -24,9 +24,12 @@ function showMood() {
     moodDisplay.innerHTML = newMood();
     button.innerHTML = "See you tomorrow ;)";
     button.style.cursor = 'default';
+    button.style.backgroundColor = '#D3D3D3'
     
     //stop the moods visualization
     button.removeEventListener('click', showMood);
 }
+
+
 
 button.addEventListener('click', showMood);
